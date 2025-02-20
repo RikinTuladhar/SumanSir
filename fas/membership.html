@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Art & Recreation Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.webp" alt="Art & Rec Club Logo">
+                
+                <span class="logo-text">Art & Rec Club</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery-archive.html">Gallery</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="membership.html" class="active">Membership</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-color: #dad0ab;">
+            <h1>Join Our Community</h1>
+            <p>Become a member and unlock exclusive benefits</p>
+        </section>
+
+        <section class="membership-plans">
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2>Basic Membership</h2>
+                    <p class="price">$20<span>/month</span></p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Access to weekly activities</li>
+                    <li><i class="fas fa-check"></i> Basic equipment rental</li>
+                    <li><i class="fas fa-check"></i> Member-only events</li>
+                    <li><i class="fas fa-check"></i> Online community access</li>
+                </ul>
+                <button class="join-btn">Join Now</button>
+            </div>
+
+            <div class="plan-card featured">
+                <div class="plan-header">
+                    <h2>Premium Membership</h2>
+                    <p class="price">$35<span>/month</span></p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> All Basic features</li>
+                    <li><i class="fas fa-check"></i> Priority event registration</li>
+                    <li><i class="fas fa-check"></i> Advanced equipment access</li>
+                    <li><i class="fas fa-check"></i> Private instruction sessions</li>
+                    <li><i class="fas fa-check"></i> Exclusive workshops</li>
+                </ul>
+                <button class="join-btn">Join Now</button>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2>Student Membership</h2>
+                    <p class="price">$15<span>/month</span></p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Valid student ID required</li>
+                    <li><i class="fas fa-check"></i> Basic activity access</li>
+                    <li><i class="fas fa-check"></i> Equipment rental</li>
+                    <li><i class="fas fa-check"></i> Student-only events</li>
+                </ul>
+                <button class="join-btn">Join Now</button>
+            </div>
+        </section>
+
+        <section class="registration-form">
+            <h2>Register for Membership</h2>
+            <form id="membershipForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="membershipType">Membership Type</label>
+                    <select id="membershipType" name="membershipType" required>
+                        <option value="">Select a plan</option>
+                        <option value="basic">Basic Membership</option>
+                        <option value="premium">Premium Membership</option>
+                        <option value="student">Student Membership</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student ID (if applicable)</label>
+                    <input type="text" id="studentId" name="studentId">
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </section>
+
+        <section class="member-benefits">
+            <h2>Member Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Priority Booking</h3>
+                    <p>Get early access to event registrations and activity schedules</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Equipment Access</h3>
+                    <p>Access to professional equipment for all activities</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Join a vibrant community of like-minded individuals</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Learning</h3>
+                    <p>Access to workshops and learning resources</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@artrecclub.edu</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Art & Recreation Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

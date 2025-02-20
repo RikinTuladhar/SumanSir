@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Beyond the Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+}
+
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.mission-vision {
+    margin-bottom: 2rem;
+}
+
+.mission-vision h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.mission-vision p {
+    font-size: 1.1rem;
+}
+
+.team {
+    margin-bottom: 2rem;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.team-outer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 1rem;
+    max-width: 300px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 60%;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+}
+
+.testimonials {
+    margin-top: 2rem;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.testimonial {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+}
+
+.testimonial h3 {
+    text-align: right;
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Beyond the Canvas</a>
+                <button class="hamburger" aria-label="Toggle menu">
+                    &#9776;
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Activities & Events</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="achievements.html">Achievements</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Blog & Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <div class="mission-vision">
+                <h2>Mission and Vision</h2>
+                <p>Our mission is to create a vibrant community of artists and enthusiasts who share a passion for creative expression. Our vision is to inspire and empower individuals through artistic and recreational activities.</p>
+            </div>
+            <div class="team">
+                <h2>Meet the Team</h2>
+                <div class="team-outer">
+                    <div class="team-member">
+                        <img src="Member.png" alt="Team Member 1">
+                        <h3>Samreshan Sahani</h3>
+                        <p>Founder & Director</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Member2.jpg" alt="Team Member 2">
+                        <h3>Rohit Pandey</h3>
+                        <p>Art Coordinator</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Member3.jpg" alt="Team Member 3">
+                        <h3>Jaykant Sha</h3>
+                        <p>Events Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <p>"Beyond the Canvas has completely transformed my perspective on art and creativity. The community is incredibly supportive and inspiring."</p>
+                    <h3>- Emily R.</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"I've made lifelong friends and developed new skills through the various activities offered. It's been an amazing experience!"</p>
+                    <h3>- Michael B.</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"The workshops and events are top-notch. I always leave feeling more motivated and creative."</p>
+                    <h3>- Sarah W.</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Beyond the Canvas. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

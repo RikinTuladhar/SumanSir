@@ -1,0 +1,120 @@
+/* Activities Page Specific Styles */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.activity-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dance-classes { background-image: url('Dance.classes.jpg'); }
+.photography { background-image: url('Photography.jpg'); }
+.art-workshops { background-image: url('art-workshop.jpg'); }
+.hiking { background-image: url('hiking-2.avif'); }
+
+.activity-content {
+    padding: 1.5rem;
+}
+
+.activity-content h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.activity-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.activity-card i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.activity-card h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.activity-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.activity-details li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-details li:last-child {
+    border-bottom: none;
+}
+
+/* Schedule Table Styles */
+.schedule {
+    padding: 2rem 5%;
+}
+
+.schedule-table {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.schedule-table th, 
+.schedule-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #eee;
+}
+
+.schedule-table th {
+    background: #3498db;
+    color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .schedule-table {
+        font-size: 0.9rem;
+    }
+}

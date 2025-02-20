@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Art & Recreation Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Art & Rec Club</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: url('web ko lagi/Art Exhibition.jpg');">
+            <h1>Photo Gallery</h1>
+            <p>Capturing moments from our activities and events</p>
+        </section>
+
+        <section class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="art">Art</button>
+            <button class="filter-btn" data-filter="workshops">Workshops</button>
+            <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </section>
+
+        <section class="gallery-grid">
+            <div class="gallery-item" data-category="art">
+                <img src="web ko lagi/Landscape Photography.jpeg" alt="Landscape Photography">
+                <div class="gallery-overlay">
+                    <h3>Landscape Photography</h3>
+                    <p>Beautiful natural landscapes captured by our photographers</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="art">
+                <img src="web ko lagi/Abstract Painting.jpeg" alt="Abstract Painting">
+                <div class="gallery-overlay">
+                    <h3>Abstract Art</h3>
+                    <p>Contemporary abstract paintings by our artists</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="art">
+                <img src="web ko lagi/Watercolor Landscape.jpg" alt="Watercolor Landscape">
+                <div class="gallery-overlay">
+                    <h3>Watercolor Art</h3>
+                    <p>Delicate watercolor pieces from our collection</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="outdoor">
+                <img src="web ko lagi/Street Photography.jpeg" alt="Street Photography">
+                <div class="gallery-overlay">
+                    <h3>Street Photography</h3>
+                    <p>Capturing life in the urban environment</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="workshops">
+                <img src="web ko lagi/Clay Sculpture.png" alt="Clay Sculpture">
+                <div class="gallery-overlay">
+                    <h3>Sculpture</h3>
+                    <p>Three-dimensional artworks by our sculptors</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="web ko lagi/Art Exhibition.jpg" alt="Art Exhibition">
+                <div class="gallery-overlay">
+                    <h3>Exhibition Highlights</h3>
+                    <p>Moments from our recent exhibitions</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="web ko lagi/Annual Art Exhibition.png" alt="Annual Art Exhibition">
+                <div class="gallery-overlay">
+                    <h3>Annual Exhibition</h3>
+                    <p>Showcasing Student Artworks</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="web ko lagi/Art Competition.png" alt="Art Competition">
+                <div class="gallery-overlay">
+                    <h3>Art Competition</h3>
+                    <p>Celebrating Creativity</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="workshops">
+                <img src="web ko lagi/Dance Workshop.jpg" alt="Dance Workshop">
+                <div class="gallery-overlay">
+                    <h3>Dance Classes</h3>
+                    <p>Movement and Expression</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="outdoor">
+                <img src="web ko lagi/Hiking Trip.jpeg" alt="Hiking Adventure">
+                <div class="gallery-overlay">
+                    <h3>Mountain Trek</h3>
+                    <p>Nature Exploration</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="outdoor">
+                <img src="web ko lagi/Mountain Hiking Adventure.jpeg" alt="Mountain Adventure">
+                <div class="gallery-overlay">
+                    <h3>Peak Expedition</h3>
+                    <p>Conquering Heights</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="workshops">
+                <img src="web ko lagi/Painting Workshop.jpg" alt="Painting Workshop">
+                <div class="gallery-overlay">
+                    <h3>Painting Class</h3>
+                    <p>Color and Composition</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="workshops">
+                <img src="web ko lagi/Photography Workshop.jpg" alt="Photography Workshop">
+                <div class="gallery-overlay">
+                    <h3>Photo Workshop</h3>
+                    <p>Learning Photography Skills</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="art">
+                <img src="web ko lagi/Sculpture Workshop.jpeg" alt="Sculpture Art">
+                <div class="gallery-overlay">
+                    <h3>Sculpture Art</h3>
+                    <p>3D Art Creation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-gallery">
+            <h2>Video Highlights</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <video controls poster="images/video-thumb1.jpg">
+                        <source src="videos/highlight1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Spring Performance Highlights</h3>
+                </div>
+                <div class="video-item">
+                    <video controls poster="images/video-thumb2.jpg">
+                        <source src="videos/highlight2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Mountain Climbing Adventure</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@artrecclub.edu</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Art & Recreation Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeIn 0.5s ease forwards';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

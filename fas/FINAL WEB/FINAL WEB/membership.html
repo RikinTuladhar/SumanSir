@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Beyond the Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Beyond the Canvas</a>
+                <button class="hamburger" aria-label="Toggle menu">
+                    &#9776;
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Activities & Events</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="achievements.html">Achievements</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Blog & Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section class="membership">
+            <h1>Membership</h1>
+            <div class="membership-info">
+                <h2>Why Become a Member?</h2>
+                <p>Joining "Beyond the Canvas" offers numerous benefits, including:</p>
+                <ul>
+                    <li>Access to exclusive workshops and events</li>
+                    <li>Discounts on art supplies and classes</li>
+                    <li>Opportunities to showcase your work in our gallery</li>
+                    <li>Networking with fellow art enthusiasts</li>
+                </ul>
+            </div>
+            <div class="membership-form">
+                <h2>Join Us Today</h2>
+                <form id="membership-form">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="interest">Area of Interest:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">--Select an Interest--</option>
+                        <option value="painting">Painting</option>
+                        <option value="dance">Dance</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="photography">Photography</option>
+                    </select>
+
+                    <button type="submit">Apply for Membership</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Beyond the Canvas. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Beyond the Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Beyond the Canvas</a>
+                <button class="hamburger" aria-label="Toggle menu">
+                    &#9776;
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Activities & Events</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="achievements.html">Achievements</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Blog & Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section class="events">
+            <h1>Events</h1>
+            <div class="event-calendar">
+                <h2>Upcoming Events</h2>
+                <div id="calendar">
+                    <!-- Simple calendar using plain HTML/CSS for demonstration -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td class="eventDate summerArt" data-tooltip="Summer Art Exhibition">10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td class="eventDate creativeWriting" data-tooltip="Creative Writing Workshop">20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="event-registration">
+                <h2>Register for an Event</h2>
+                <form id="registration-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="event">Select Event:</label>
+                    <select id="event" name="event" required>
+                        <option value="">--Please choose an event--</option>
+                        <option value="art-workshop">Art Workshop</option>
+                        <option value="dance-class">Dance Class</option>
+                        <option value="hiking-trip">Hiking Trip</option>
+                        <option value="photography-outing">Photography Outing</option>
+                    </select>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Beyond the Canvas. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
